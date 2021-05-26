@@ -1,0 +1,82 @@
+*{
+ margin: 0;   
+}
+
+
+/*De cada grupo de elemento el q ocupe la tercera posicion, sera afectada el elemet
+tr:nth-child(3)*/  
+
+tr:nth-child(3){
+    background-color: #eee;
+}
+/*odd IMPAR*/
+tbody tr:nth-child(odd){
+    background-color: #ccc;
+}
+/*even PAR*/
+tbody tr:nth-child(even){
+    background-color: #aaa;
+}
+ t body tr:nth-child(even){
+     background-color: #333;
+ }
+ /*la tercera columna de los grupos de "td" y "th"   */
+  td:nth-child(3), th:nth-child(3) {
+     background-color:pink;
+ }
+tbody  tr:last-child td:last-child{
+    border-bottom-left-radius: 10px;
+    
+ }
+tbody tr:last-child td:first-child{
+    border-bottom-right-radius: 10px;
+}
+/*Como quitar el margen entre celdas a una tabla*/
+table{
+    border-collapse:collapse;
+}
+thead tr:first-child {
+     background-color: coral;
+}
+thead tr:first-child  th:first-child {
+    border-top-left-radius: 10px;
+}
+ thead tr:first-child th:last-child{
+   border-radius:0 10px 0 0;
+   border-top-right-radius: 10px;    
+}
+ nav li{
+     display:inline-block;
+ }
+ .nav-link {
+     text-decoration: none;
+     font-family: sans-serif;
+     margin-right: 10px;
+     color: #444;
+ }
+ /*todos los elementos  que tengan la clase nav y  que tengan 
+ la clase "active"  */
+ .nav-link.active{
+     font-style: italic;
+ }
+ /*Para todos los elementos parrafos que sean hermanos de h2*/
+ h2~p {
+     color: orange;
+ }
+ /*el primer parrafo de un h3  */
+ h3+p 
+ 
+ 
+ 
+ {
+     background-color: aquamarine;
+ }
+
+ article:not(.agotado){
+     width: 300px;
+     box-shadow: 0px 0px 8px #333;
+ }
+ /*Todos los hijos de article excepto los h4  */
+ article :not(h4){
+     font-style: italic;
+ }
